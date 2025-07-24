@@ -19,7 +19,4 @@ public class Fight {
         return null;
     }
 
-    public void printWinner(){
-
-    }
 }
