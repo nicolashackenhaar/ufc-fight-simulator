@@ -14,12 +14,12 @@ public class Database {
         }
     }
 
-    public static Fighter buscarPorNome(String nome) {
+    public static Fighter searchByName(String name) {
         String sql = "SELECT * FROM fighters WHERE name = ?";
         try (Connection conn = connect();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
-            stmt.setString(1, nome);
+            stmt.setString(1, name);
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
