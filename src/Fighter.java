@@ -3,12 +3,14 @@ public class Fighter {
     private int victories;
     private int defeats;
     private int draws;
+    private int knockout;
 
-    public Fighter(String name, int victories, int defeats, int draws) {
+    public Fighter(String name, int victories, int defeats, int draws, int knockout) {
         this.name = name;
         this.victories = victories;
         this.defeats = defeats;
         this.draws = draws;
+        this.knockout = knockout;
     }
 
     public int getAllFights() {
@@ -28,6 +30,7 @@ public class Fighter {
         System.out.println("Vitórias: "+victories+"/"+getAllFights());
         System.out.println("Derrotas: "+ defeats+"/"+getAllFights());
         System.out.println("Empates: "+ draws+"/"+getAllFights());
+        System.out.println("Nocautes: "+knockout);
         System.out.println("Chance de vitoria: "+winningPercentage());
 
 
@@ -63,5 +66,13 @@ public class Fighter {
 
     public void setDraws(int draws) {
         this.draws = draws;
+    }
+
+    public int getKnockout() {
+        return knockout;
+    }
+
+    public void setKnockout(int knockout) {
+        this.knockout = knockout;
     }
 }
