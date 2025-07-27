@@ -8,7 +8,7 @@ import java.net.URL;
 public class ApiClient {
     private static final String API_URL = "https://api.octagon-api.com/fighters";
 
-    private static JSONObject getFighters() throws Exception {
+    public static JSONObject getFighters() throws Exception {
         URL url = new URL(API_URL);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
