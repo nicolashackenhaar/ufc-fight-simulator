@@ -8,15 +8,39 @@
 </head>
 <body>
 <h1>Simulador de Luta UFC</h1>
-<p>Escolha seu lutador:</p>
 
-<div class="fighters">
-  <button onclick="escolher('Jon Jones')">Jon Jones</button>
-  <button onclick="escolher('Stipe Miocic')">Stipe Miocic</button>
-</div>
+<label for="lutador1">Escolha o Lutador 1:</label>
+<select id="lutador1">
+  <option>Jon Jones</option>
+  <option>Stipe Miocic</option>
+  <option>Israel Adesanya</option>
+  <option>Francis Ngannou</option>
+  <option>Anderson Silva</option>
+  <option>Conor McGregor</option>
+  <option>Khabib Nurmagomedov</option>
+  <option>Charles Oliveira</option>
+  <option>José Aldo</option>
+  <option>Daniel Cormier</option>
+</select>
+
+<label for="lutador2">Escolha o Lutador 2:</label>
+<select id="lutador2">
+  <option>Jon Jones</option>
+  <option>Stipe Miocic</option>
+  <option>Israel Adesanya</option>
+  <option>Francis Ngannou</option>
+  <option>Anderson Silva</option>
+  <option>Conor McGregor</option>
+  <option>Khabib Nurmagomedov</option>
+  <option>Charles Oliveira</option>
+  <option>José Aldo</option>
+  <option>Daniel Cormier</option>
+</select>
+
+<br>
+<button onclick="simular()">Simular Luta</button>
 
 <div id="resultado"></div>
-
 <script src="script.js"></script>
 </body>
 </html>
